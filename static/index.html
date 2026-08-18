@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>Job Ingestion Service</title>
+
+    <link rel="stylesheet" href="/static/style.css">
+</head>
+
+<body>
+
+    <main class="container">
+
+        <header>
+            <p class="eyebrow">ACDYON ENGINEERING CHALLENGE</p>
+
+            <h1>Job Ingestion Service</h1>
+
+            <p class="subtitle">
+                Resilient ingestion from permitted public job feeds.
+            </p>
+        </header>
+
+        <section class="status-card">
+
+            <div>
+                <span class="label">SYSTEM STATUS</span>
+                <h2 id="status">Checking...</h2>
+            </div>
+
+            <div>
+                <span class="label">STORED JOBS</span>
+                <h2 id="job-count">—</h2>
+            </div>
+
+        </section>
+
+        <section class="actions">
+
+            <button id="ingest-button">
+                Run Ingestion
+            </button>
+
+            <a href="/docs" target="_blank">
+                API Documentation
+            </a>
+
+        </section>
+
+        <section class="result-card">
+
+            <h2>Latest Ingestion</h2>
+
+            <div id="result">
+                No ingestion triggered yet.
+            </div>
+
+        </section>
+
+        <section>
+
+            <h2>Recent Jobs</h2>
+
+            <div id="jobs"></div>
+
+        </section>
+
+    </main>
+
+    <script src="/static/app.js"></script>
+
+</body>
+</html>
